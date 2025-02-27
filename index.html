@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hack3r Python Terminal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="terminal-container">
+        <div class="terminal-header">
+            <div class="terminal-buttons">
+                <span class="terminal-button close"></span>
+                <span class="terminal-button minimize"></span>
+                <span class="terminal-button maximize"></span>
+            </div>
+            <div class="terminal-title">H4CK3R-PYTHON-T3RMINAL v1.0</div>
+        </div>
+        <div class="terminal" id="terminal">
+            <div class="terminal-output" id="output">
+                <div class="ascii-art">
+    ██╗  ██╗ █████╗  ██████╗██╗  ██╗██████╗ ██╗   ██╗████████╗██╗  ██╗ ██████╗ ███╗   ██╗
+    ██║  ██║██╔══██╗██╔════╝██║ ██╔╝██╔══██╗╚██╗ ██╔╝╚══██╔══╝██║  ██║██╔═══██╗████╗  ██║
+    ███████║███████║██║     █████╔╝ ██████╔╝ ╚████╔╝    ██║   ███████║██║   ██║██╔██╗ ██║
+    ██╔══██║██╔══██║██║     ██╔═██╗ ██╔══██╗  ╚██╔╝     ██║   ██╔══██║██║   ██║██║╚██╗██║
+    ██║  ██║██║  ██║╚██████╗██║  ██╗██║  ██║   ██║      ██║   ██║  ██║╚██████╔╝██║ ╚████║
+    ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝      ╚═╝   ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝
+                </div>
+                <div>INITIALIZING SYSTEM...</div>
+                <div>[SUCCESS] SYSTEM INITIALIZED</div>
+                <div>Type 'help' for commands or enter Python code directly</div>
+            </div>
+            <div class="terminal-input-line">
+                <span class="prompt">root@h4ck3r:~# </span>
+                <input type="text" id="terminal-input" autocomplete="off" autofocus>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.23.4/full/pyodide.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
