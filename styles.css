@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', monospace;
+}
+
+body {
+    background-color: #111;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.terminal-container {
+    width: 800px;
+    height: 500px;
+    background-color: #000;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+    overflow: hidden;
+    border: 1px solid #00ff00;
+}
+
+.terminal-header {
+    height: 30px;
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    border-bottom: 1px solid #00ff00;
+}
+
+.terminal-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.terminal-button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.close {
+    background-color: #ff5f56;
+}
+
+.minimize {
+    background-color: #ffbd2e;
+}
+
+.maximize {
+    background-color: #27c93f;
+}
+
+.terminal-title {
+    margin-left: auto;
+    margin-right: auto;
+    color: #00ff00;
+    font-size: 14px;
+}
+
+.terminal {
+    height: calc(100% - 30px);
+    padding: 10px;
+    overflow-y: auto;
+    color: #00ff00;
+    text-shadow: 0 0 5px rgba(0, 255, 0, 0.7);
+}
+
+.terminal-output {
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.terminal-input-line {
+    display: flex;
+}
+
+.prompt {
+    color: #00ff00;
+    margin-right: 5px;
+}
+
+#terminal-input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #00ff00;
+    font-size: 16px;
+}
+
+.ascii-art {
+    font-size: 10px;
+    line-height: 1;
+    margin-bottom: 10px;
+    white-space: pre;
+}
+
+.error {
+    color: #ff3333;
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.7);
+}
+
+.typing {
+    border-right: 2px solid #00ff00;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s steps(60, end) forwards, blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #00ff00 }
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #00ff00;
+    border-radius: 5px;
+}
